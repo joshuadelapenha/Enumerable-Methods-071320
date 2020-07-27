@@ -32,7 +32,7 @@ zoos = {
             {
                 species: "Monkey",
                 count: 7
-            }
+            },
         ]
     },
     "Staten Island Zoo" => {
@@ -63,9 +63,10 @@ zoos = {
 # Central Park Zoo has just received 4 wolves. Alter the `zoos` information to reflect this new change:
 # Put this hash: { species: "Wolf", count: 4 } in the array under the `:animals` key in Central Park Zoo
 
+ wolf =  zoos[:Central Park Zoo][:animals][:species=> "Wolf"]
+  binding.pry
 
-
-
+#  hashs in hashs central park hash, animal hash
 
 # The 2 penguins in the Bronx Zoo just had a baby. Alter the `zoos` information to reflect this new change:
 # Increment the number for the `:count` key in the "Penguin" hash in the Bronx Zoo array by 1. 
