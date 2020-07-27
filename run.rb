@@ -70,17 +70,19 @@ zoos = {
 # This line is hardcoded in terms of element index "2" 
 zoos["Central Park Zoo"][:animals] << { species: "Wolf", count: 4 }
 
-binding.pry
 
 
 
-#  hashs in hashs central park hash, animal hash
+
 
 # The 2 penguins in the Bronx Zoo just had a baby. Alter the `zoos` information to reflect this new change:
 # Increment the number for the `:count` key in the "Penguin" hash in the Bronx Zoo array by 1. 
 # You can assume that the animal at index 0 will always be the "Penguin" hash.
+# We don't need to check that the penguin hash exists (us).
 
+zoos["Bronx Zoo"][:animals][0][:count] += 1
 
+binding.pry
 
 
 
