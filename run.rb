@@ -64,14 +64,15 @@ zoos = {
 # Put this hash: { species: "Wolf", count: 4 } in the array under the `:animals` key in Central Park Zoo
 
 #we are creating a variable to add wolf
-wolf =  zoos["Central Park Zoo"][:animals][:species=> "Wolf"]
-zoos<<wolf
+#wolf =  zoos["Central Park Zoo"][:animals][:species=> "Wolf"]
+#zoos<<wolf
 
-zoos["Central Park Zoo"][:animals][3] = { species: "Wolf", count: 4 }
+# This line is hardcoded in terms of element index "2" 
+zoos["Central Park Zoo"][:animals] << { species: "Wolf", count: 4 }
 
 binding.pry
 
-0
+
 
 #  hashs in hashs central park hash, animal hash
 
