@@ -63,8 +63,15 @@ zoos = {
 # Central Park Zoo has just received 4 wolves. Alter the `zoos` information to reflect this new change:
 # Put this hash: { species: "Wolf", count: 4 } in the array under the `:animals` key in Central Park Zoo
 
- wolf =  zoos[:Central Park Zoo][:animals][:species=> "Wolf"]
-  binding.pry
+#we are creating a variable to add wolf
+wolf =  zoos["Central Park Zoo"][:animals][:species=> "Wolf"]
+zoos<<wolf
+
+
+
+binding.pry
+
+0
 
 #  hashs in hashs central park hash, animal hash
 
