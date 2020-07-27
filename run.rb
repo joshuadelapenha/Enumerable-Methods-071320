@@ -80,6 +80,7 @@ zoos["Central Park Zoo"][:animals] << { species: "Wolf", count: 4 }
 # You can assume that the animal at index 0 will always be the "Penguin" hash.
 # We don't need to check that the penguin hash exists (us).
 
+#The += 1 increases the value of the value paired with the key :count by 1.(us)
 zoos["Bronx Zoo"][:animals][0][:count] += 1
 
 binding.pry
