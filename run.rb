@@ -67,7 +67,7 @@ zoos = {
 wolf =  zoos["Central Park Zoo"][:animals][:species=> "Wolf"]
 zoos<<wolf
 
-
+zoos["Central Park Zoo"][:animals][3] = { species: "Wolf", count: 4 }
 
 binding.pry
 
