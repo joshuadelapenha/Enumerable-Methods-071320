@@ -83,17 +83,32 @@ zoos["Central Park Zoo"][:animals] << { species: "Wolf", count: 4 }
 #The += 1 increases the value of the value paired with the key :count by 1.(us)
 zoos["Bronx Zoo"][:animals][0][:count] += 1
 
-binding.pry
+# binding.pry
 
 
 
 # Each of the zoos in the city just received 2 pandas. Alter the `zoos` information to reflect this new change:
 # In the array of animals under each Zoo, shovel this hash: { species: "Panda", count: 2 }
+# we need to mutate the origanl hash (change) and add "panda" .
 
 
+def adding_panda(zoos,number)
+    # loop through "zoos_hash" each element is a "zoos_hash" !! aka a zoo! line 97(us)
+ zoos.map do |zoos_hash| 
+     zoos_hash.map do |element|
+        if element == [:animals][0]
+            element<< {species: "panda", count: 2}
+        puts "we are inside the double map lost"
+        end
+  zoos_hash
+ 
+  binding.pry
+  end 
+ end
+end 
 
-
-
+adding_panda(zoos,2)
+#  binding.pry
 # Return the number of Tigers at the Bronx Zoo.
 # Rather than assuming that the animal at index 2 will always be the "Tiger" hash:
 # First find the "Tiger" hash from the array of Animals at the Bronx Zoo and then, access the value under the ":count" key
