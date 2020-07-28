@@ -92,20 +92,27 @@ zoos["Bronx Zoo"][:animals][0][:count] += 1
 # we need to mutate the origanl hash (change) and add "panda" .
 
 
-def adding_panda(zoos,number)
+def adding_panda(zoos)
+    zoos.each do |zoo_name, zoo_info|
+        zoo_info[:animals] << {:species=>"Panda", :count=> 2}
+    end
+      pp zoos
+end
+
+adding_panda(zoos)
+
+#I used two paramaters for the enumerables since a hash comes in a pair  #pp is pretty print that makes it look pretty on line 65
+    
     # loop through "zoos_hash" each element is a "zoos_hash" !! aka a zoo! line 97(us)
- zoos.map do |zoos_hash| 
+#  zoos.map do |zoos_hash| 
     # pls look at the above code we are looping mutating this line (99)(us)
-    zoos["Bronx Zoo"][:animals] << {species: "Panda", count: 2}
+    # zoos["Bronx Zoo"][:animals] << {species: "Panda", count: 2}
     # do we do the same for "central park zoo" and "staten island"! (us)
-    zoos["Central Park Zoo"][:animals] << {species: "Panda", count: 2}
-    zoos["Staten Island Zoo"][:animals] << {species: "Panda", count: 2}
+    # zoos["Central Park Zoo"][:animals] << {species: "Panda", count: 2}
+    # zoos["Staten Island Zoo"][:animals] << {species: "Panda", count: 2}
 #   zoos_hash
  
-  binding.pry
-    end
-end 
-
+  
 
 
 adding_panda(zoos,2)
