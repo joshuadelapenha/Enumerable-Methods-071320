@@ -101,7 +101,7 @@ end
 
 adding_panda(zoos)
 
-#I used two paramaters for the enumerables since a hash comes in a pair  #pp is pretty print that makes it look pretty on line 65
+#I used two paramaters for the enumerables since a hash comes in a pair #pp is pretty print that makes it look pretty on line 65
     
     # loop through "zoos_hash" each element is a "zoos_hash" !! aka a zoo! line 97(us)
 #  zoos.map do |zoos_hash| 
@@ -115,14 +115,29 @@ adding_panda(zoos)
   
 
 
-adding_panda(zoos,2)
-#  binding.pry
+
 # Return the number of Tigers at the Bronx Zoo.
 # Rather than assuming that the animal at index 2 will always be the "Tiger" hash:
 # First find the "Tiger" hash from the array of Animals at the Bronx Zoo and then, access the value under the ":count" key
 
+def adding_tigers(zoos)
+    
+    # zoos.each do |zoo, info|
+        
+    #     zoo[:animals]
+    #     binding.pry
+    #     puts "are we in this enumerable"
+        
+    
+    # end 
 
+end 
 
+# brooklyn.find do {cohort_hash}
+# 	Cohort_hash[:name] == “french pry with gitchup”
+# End
+
+adding_tigers(zoos)
 
 
 
