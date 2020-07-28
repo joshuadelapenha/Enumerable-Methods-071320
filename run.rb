@@ -95,17 +95,18 @@ zoos["Bronx Zoo"][:animals][0][:count] += 1
 def adding_panda(zoos,number)
     # loop through "zoos_hash" each element is a "zoos_hash" !! aka a zoo! line 97(us)
  zoos.map do |zoos_hash| 
-     zoos_hash.map do |element|
-        if element == [:animals][0]
-            element<< {species: "panda", count: 2}
-        puts "we are inside the double map lost"
-        end
-  zoos_hash
+    # pls look at the above code we are looping mutating this line (99)(us)
+    zoos["Bronx Zoo"][:animals] << {species: "Panda", count: 2}
+    # do we do the same for "central park zoo" and "staten island"! (us)
+    zoos["Central Park Zoo"][:animals] << {species: "Panda", count: 2}
+    zoos["Staten Island Zoo"][:animals] << {species: "Panda", count: 2}
+#   zoos_hash
  
   binding.pry
-  end 
- end
+    end
 end 
+
+
 
 adding_panda(zoos,2)
 #  binding.pry
